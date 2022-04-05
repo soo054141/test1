@@ -3,6 +3,7 @@ import Header from "./components/header";
 import Navigation from "./components/navigation";
 import Main from "./pages/main";
 import Result from "./pages/result";
+import Error from "./pages/errorPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/result" element={<Result />} />
+        <Route path="/error" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );

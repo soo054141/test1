@@ -6,12 +6,12 @@ import TableContent from "../../components/tableContent";
 
 export default function Result() {
   const columns = ["Name", "Foxtrot", "Golf"];
-  const data = Array(5)
+  const data = Array(4)
     .fill()
     .map(() => ({
-      name: 1,
-      foxtrot: "ㅎㅎ",
-      golf: "golf",
+      name: "Name",
+      foxtrot: "-9.08273",
+      golf: "-9.704",
     }));
 
   return (
@@ -19,7 +19,7 @@ export default function Result() {
       <TabHeader />
       <Results.Divider />
       <TableHeader columns={columns} data={data} />
-      <TableContent />
+      {/* <TableContent /> */}
     </Results.TabContents>
   );
 }

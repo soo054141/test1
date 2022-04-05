@@ -1,16 +1,26 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { NavWrapper, NavList, NavItem, ProjectName } from "./style";
 
 export default function Navigation() {
   return (
     <NavWrapper>
       <NavList>
-        <NavItem>Alpha</NavItem>
-        <NavItem>Brabo</NavItem>
-        <NavItem>Charlie</NavItem>
-        <NavItem>Delta</NavItem>
-        <NavItem>Echo</NavItem>
+        <NavItem>
+          <Link to="/error">Alpha</Link>
+        </NavItem>
+        <NavItem>
+          <Link to="/error">Brabo</Link>
+        </NavItem>
+        <NavItem>
+          <Link to="/error">Charlie</Link>
+        </NavItem>
+        <NavItem>
+          <Link to="/error">Delta</Link>
+        </NavItem>
+        <NavItem>
+          <Link to="/error">Echo</Link>
+        </NavItem>
         <NavItem>
           <NavLink to="/result">Result</NavLink>
         </NavItem>
