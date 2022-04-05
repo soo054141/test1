@@ -10,3 +10,8 @@ export const TabContents = styled.div`
   margin-top: 79px;
   border: 1px solid red;
 `;
+
+export const Divider = styled.div`
+  width: 82.083vw;
+  border: 1px solid #0d9991;
+`;

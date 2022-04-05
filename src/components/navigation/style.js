@@ -1,8 +1,6 @@
 import styled, { css } from "styled-components";
 
 const navInnerStyle = css`
-  font-family: "Lato";
-  font-style: normal;
   font-size: 20px;
   line-height: 24px;
 `;
