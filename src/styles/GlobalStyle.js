@@ -3,6 +3,9 @@ import reset from "styled-reset";
 
 export const GlobalStyle = createGlobalStyle`
   ${reset}
+  a {
+    text-decoration: none;
+  }
   html {
     margin: 0;
     padding: 0;
