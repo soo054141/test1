@@ -1,25 +1,27 @@
-import React from "react";
+import React, { useCallback } from "react";
 import * as Results from "./style";
-import TabHeader from "../../components/tabHeader";
-import TableHeader from "../../components/tableHeader";
-import TableContent from "../../components/tableContent";
+import TabHeader from "../../components/TabHeader";
+import MainTable from "../../components/MainTable";
+// import { useEffect } from "react";
 
 export default function Result() {
-  const columns = ["Name", "Foxtrot", "Golf"];
-  const data = Array(4)
-    .fill()
-    .map(() => ({
-      name: "Name",
-      foxtrot: "-9.08273",
-      golf: "-9.704",
-    }));
+  // const getDataFunc = useCallback(async () => {
+  //   const response = await fetch(`http://testapi.hits.ai/result/`);
+  //   if (response.ok) {
+  //     const data = await response.json();
+  //     console.log(data);
+  //   }
+  // }, []);
+
+  // useEffect(() => {
+  //   getDataFunc();
+  // }, []);
 
   return (
     <Results.TabContents>
       <TabHeader />
       <Results.Divider />
-      <TableHeader columns={columns} data={data} />
-      {/* <TableContent /> */}
+      <MainTable />
     </Results.TabContents>
   );
 }

@@ -1,17 +1,17 @@
-import { Thead, Tr, Th } from "./style";
+import { Thead, Tr, Th } from "../TableHeader/style";
 import SortButtons from "../SortButtons";
 
-export default function TableHeader() {
+export default function SubTableHeader() {
   return (
     <Thead>
       <Tr>
-        <Th>a</Th>
+        <Th>id</Th>
         <Th>
-          g
+          Foxtrot
           <SortButtons />
         </Th>
         <Th>
-          v
+          Golf
           <SortButtons />
         </Th>
       </Tr>
