@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./components/header";
-import Navigation from "./components/navigation";
+import Header from "./components/Header";
+import Navigation from "./components/Nav";
 import Main from "./pages/main";
 import Result from "./pages/result";
 import Error from "./pages/errorPage";
