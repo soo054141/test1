@@ -5,14 +5,14 @@ export default function TableHeader() {
   return (
     <Thead>
       <Tr>
-        <Th>a</Th>
+        <Th>Name</Th>
         <Th>
-          g
-          <SortButtons />
+          Foxtrot
+          <SortButtons targetTable="main" columnKey="foxtrot" />
         </Th>
         <Th>
-          v
-          <SortButtons />
+          Golf
+          <SortButtons targetTable="main" columnKey="golf" />
         </Th>
       </Tr>
     </Thead>
