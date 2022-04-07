@@ -14,7 +14,6 @@ export const TableRow = styled.tr`
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  cursor: pointer;
 `;
 
 const CellStyles = css`
@@ -25,6 +24,7 @@ const CellStyles = css`
   align-items: center;
   font-size: 24px;
   font-weight: 700;
+  cursor: pointer;
 `;
 
 export const NameCell = styled.td`

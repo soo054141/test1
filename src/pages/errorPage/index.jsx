@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const ErrorWrapper = styled.div`
@@ -32,6 +33,7 @@ export const Check = styled.button`
   border-color: #7879f1;
   color: #7879f1;
   line-height: 22px;
+  cursor: pointer;
 `;
 
 export default function Error() {
@@ -39,7 +41,9 @@ export default function Error() {
     <ErrorWrapper>
       <ErrorCode>404</ErrorCode>
       <Message>OOPS, SORRY WE CAN'T FIND THAT PAGE!</Message>
-      <Check>Go Home</Check>
+      <Check>
+        <Link to="/">Go Home</Link>
+      </Check>
     </ErrorWrapper>
   );
 }

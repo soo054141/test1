@@ -7,5 +7,5 @@ export default function Main() {
   useEffect(() => {
     navigate("/result");
   }, []);
-  return <div>I'm Main</div>;
+  return <div></div>;
 }

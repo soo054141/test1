@@ -20,6 +20,7 @@ const selectBtnStyles = css`
   background-color: #fff;
   font-size: 18px;
   line-height: 22px;
+  cursor: pointer;
 `;
 
 export const Check = styled.button`

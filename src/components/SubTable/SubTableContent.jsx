@@ -8,7 +8,6 @@ const SubTableRow = styled.tr`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
   ${({ selectRow }) => selectRow && "background-color: #C4C4C4;"};
 `;
 

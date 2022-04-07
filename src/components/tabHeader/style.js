@@ -31,6 +31,7 @@ const toolStyle = css`
   font-weight: 700;
   font-size: 24px;
   color: #7879f1;
+  cursor: pointer;
 `;
 
 export const SearchInput = styled.input`

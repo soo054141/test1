@@ -7,6 +7,7 @@ export const SortButtonWrapper = styled.div`
   flex-direction: column;
   margin-left: 8px;
   margin-top: 2px;
+  cursor: pointer;
 `;
 
 export const SortByHigh = styled.img``;
