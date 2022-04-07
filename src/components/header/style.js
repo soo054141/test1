@@ -10,5 +10,5 @@ export const HeaderWrapper = styled.header`
 export const LogoIcon = styled.img`
   width: 200px;
   height: 73px;
-  padding: 14px 0px 13px 15px;
+  margin: 14px 0px 13px 15px;
 `;
