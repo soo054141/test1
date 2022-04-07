@@ -1,27 +1,27 @@
-import React, { useCallback } from "react";
+import React, { useEffect, useState } from "react";
 import * as Results from "./style";
 import TabHeader from "../../components/TabHeader";
 import MainTable from "../../components/MainTable";
-// import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { getResult } from "../../store/app/appAction";
+import SelectItemBoard from "../../components/SelectItemBoard";
 
 export default function Result() {
-  // const getDataFunc = useCallback(async () => {
-  //   const response = await fetch(`http://testapi.hits.ai/result/`);
-  //   if (response.ok) {
-  //     const data = await response.json();
-  //     console.log(data);
-  //   }
-  // }, []);
+  const dispatch = useDispatch();
+  const [filterKeyword, setFilterKeyword] = useState("");
 
-  // useEffect(() => {
-  //   getDataFunc();
-  // }, []);
+  useEffect(() => {
+    dispatch(getResult());
+  }, [dispatch]);
 
   return (
     <Results.TabContents>
-      <TabHeader />
-      <Results.Divider />
-      <MainTable />
+      <Results.FixedItems>
+        <TabHeader setFilterKeyword={setFilterKeyword} />
+        <Results.Divider />
+      </Results.FixedItems>
+      <SelectItemBoard />
+      <MainTable filterKeyword={filterKeyword} />
     </Results.TabContents>
   );
 }
