@@ -34,6 +34,10 @@ export const NavItem = styled.li`
     font-weight: 700;
     text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
+  &:hover {
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 `;
 
 export const ProjectName = styled.div`
