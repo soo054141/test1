@@ -1,4 +1,7 @@
-### How To Start
+### 사용기술
+`React.js`, `styled-components`, `redux-toolkit`
+
+### How To Start?
 npm start | yarn start
 
 ### .env
