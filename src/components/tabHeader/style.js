@@ -3,7 +3,8 @@ import { css } from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 100px;
+  margin-bottom: 48px;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
 `;
@@ -19,7 +20,7 @@ export const ResultTool = styled.div`
   gap: 26px;
 `;
 
-export const SearchForm = styled.form``;
+export const SearchForm = styled.div``;
 
 const toolStyle = css`
   height: 55px;
